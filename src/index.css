@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #44403c;
+  background-color: #fafaf9;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Custom hover effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Enhanced button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-outline {
+  @apply border-2 border-white text-white hover:bg-white hover:text-stone-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300;
+}
+
+/* Custom shadows with warm tones */
+.shadow-warm {
+  box-shadow: 0 10px 30px rgba(146, 64, 14, 0.15);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 20px 40px rgba(146, 64, 14, 0.2);
+}
+
+/* Enhanced card styles */
+.card {
+  @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2;
+}
+
+.card-hover {
+  @apply hover:scale-105 transition-transform duration-300;
+}
+
+/* Loading states for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+  opacity: 0;
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Custom scrollbar with warm colors */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d97706, #92400e);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #92400e, #78350f);
+}
+
+/* Enhanced typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #44403c;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+  color: #57534e;
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Enhanced form styles */
+input, textarea, select {
+  @apply border border-stone-300 rounded-xl px-5 py-4 text-lg transition-all duration-300;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply ring-2 ring-amber-500 border-transparent;
+}
+
+/* Responsive spacing */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-padding {
+  @apply px-4 md:px-6 lg:px-8;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  header,
+  footer,
+  .floating-whatsapp {
+    display: none !important;
+  }
+  
+  * {
+    color: black !important;
+    background: white !important;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card {
+    border: 2px solid #000;
+  }
+  
+  button {
+    border: 2px solid #000;
+  }
+}
+
+/* Dark mode support (for future implementation) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1c1917;
+    --text-primary: #f5f5f4;
+    --accent: #d97706;
+  }
+}
+
+/* Custom utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-texture {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Crect width='1' height='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 30px 30px;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #d97706;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
