@@ -36,6 +36,7 @@ const Header = () => {
             <a href="#home" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">Ana Sayfa</a>
             <a href="#about" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">Hakkımızda</a>
             <a href="#services" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">Hizmetler</a>
+            <a href="#showcase" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">Videolar</a>
             <a href="#gallery" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">Projeler</a>
             <a href="#contact" className="text-stone-700 hover:text-amber-600 transition duration-300 font-medium">İletişim</a>
           </nav>
@@ -61,6 +62,7 @@ const Header = () => {
               <a href="#home" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">Ana Sayfa</a>
               <a href="#about" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">Hakkımızda</a>
               <a href="#services" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">Hizmetler</a>
+              <a href="#showcase" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">Videolar</a>
               <a href="#gallery" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">Projeler</a>
               <a href="#contact" className="block text-stone-700 hover:text-amber-600 transition duration-300 font-medium py-2">İletişim</a>
               <div className="flex items-center space-x-2 pt-4 border-t border-stone-200">
