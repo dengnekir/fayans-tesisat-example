@@ -183,9 +183,8 @@ const Contact = () => {
                       className="w-full px-5 py-4 border border-stone-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-300 text-lg"
                     >
                       <option value="">Hizmet seçin</option>
-                      <option value="tesisat">Tesisat Hizmetleri</option>
-                      <option value="banyo">Banyo Yenileme</option>
-                      <option value="doseme">Profesyonel Döşeme</option>
+                      <option value="fayans">Fayans Döşeme ve Yenileme</option>
+                      <option value="tesisat">Tesisat İşleri (Ercan Gökçur)</option>
                       <option value="acil">Acil Servis</option>
                       <option value="kesif">Ücretsiz Keşif</option>
                     </select>
@@ -238,19 +237,19 @@ const Contact = () => {
                   name: "Ayşe Yılmaz",
                   location: "Kadıköy",
                   rating: 5,
-                  review: "Banyomuzu tamamen yenilediler. Çok profesyonel ve temiz çalışıyorlar. Kesinlikle tavsiye ederim!"
+                  review: "Banyo fayanslarımızı yenilediler. Çok profesyonel ve temiz çalışıyorlar. Kesinlikle tavsiye ederim!"
                 },
                 {
                   name: "Mehmet Kaya",
                   location: "Beşiktaş",
                   rating: 5,
-                  review: "Gece yarısı tesisat arızası için aradım, hemen geldiler. Çok memnun kaldım, teşekkürler!"
+                  review: "Ercan Bey tesisat arızamızı çok hızlı çözdü. Çok memnun kaldım, teşekkürler!"
                 },
                 {
                   name: "Fatma Demir",
                   location: "Üsküdar",
                   rating: 5,
-                  review: "Mutfak döşemesi harika oldu. Detaylara çok dikkat ediyorlar. Kesinlikle tekrar çalışırım."
+                  review: "Mutfak fayansları harika oldu. Detaylara çok dikkat ediyorlar. Kesinlikle tekrar çalışırım."
                 }
               ].map((review, index) => (
                 <div key={index} className="bg-stone-50 p-8 rounded-2xl hover:shadow-lg transition duration-300">

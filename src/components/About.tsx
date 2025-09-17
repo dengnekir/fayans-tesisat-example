@@ -11,8 +11,8 @@ const About = () => {
               <span className="text-amber-700">Anadolu Tesisat Ustası</span> Hakkında
             </h2>
             <p className="text-xl text-stone-600 max-w-4xl mx-auto leading-relaxed">
-              15 yılı aşkın deneyimimizle İstanbul'un her köşesinde kaliteli tesisat, döşeme ve banyo yenileme hizmetleri sunuyoruz. 
-              Müşteri memnuniyeti ve kaliteli işçilik bizim önceliğimizdir.
+              15 yılı aşkın deneyimimizle İstanbul'un her köşesinde kaliteli fayans döşeme ve tesisat hizmetleri sunuyoruz. 
+              Uzman Ercan Gökçur ile müşteri memnuniyeti ve kaliteli işçilik bizim önceliğimizdir.
             </p>
           </div>
 
@@ -28,6 +28,13 @@ const About = () => {
             <div className="order-1 lg:order-2 space-y-8">
               <h3 className="text-3xl font-bold text-stone-800 mb-8">Neden Bizi Tercih Etmelisiniz?</h3>
               <div className="space-y-6">
+                <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                  <CheckCircle className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-stone-800 text-lg">Uzman Ercan Gökçur</h4>
+                    <p className="text-stone-600">Tesisat işlerinde sorumlu uzman ile güvenilir hizmet</p>
+                  </div>
+                </div>
                 <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300">
                   <CheckCircle className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
                   <div>

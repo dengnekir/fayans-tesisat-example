@@ -26,22 +26,22 @@ const Showcase = () => {
   const videos = [
     {
       id: 0,
-      title: "Banyo Yenileme Süreci",
-      description: "Modern banyo tasarımından montaja kadar tüm süreç",
+      title: "Fayans Döşeme Süreci",
+      description: "Profesyonel fayans döşeme tekniklerimiz ve kaliteli işçilik",
       thumbnail: "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800",
       videoUrl: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
     },
     {
       id: 1,
-      title: "Profesyonel Döşeme İşleri",
-      description: "Zemin ve duvar döşeme tekniklerimiz",
+      title: "Tesisat İşleri - Ercan Gökçur",
+      description: "Uzman Ercan Gökçur ile profesyonel tesisat çözümleri",
       thumbnail: "https://images.pexels.com/photos/5824866/pexels-photo-5824866.jpeg?auto=compress&cs=tinysrgb&w=800",
       videoUrl: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4"
     },
     {
       id: 2,
-      title: "Müşteri Memnuniyeti",
-      description: "Müşterilerimizden gelen yorumlar ve teşekkürler",
+      title: "Tamamlanan Projeler",
+      description: "İstanbul'da tamamladığımız başarılı projeler",
       thumbnail: "https://images.pexels.com/photos/8005399/pexels-photo-8005399.jpeg?auto=compress&cs=tinysrgb&w=800",
       videoUrl: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4"
     }
@@ -85,11 +85,11 @@ const Showcase = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
             <h2 className="text-4xl md:text-6xl font-bold text-stone-800 mb-8">
-              <span className="text-amber-700">Çalışmalarımızı</span> İzleyin
+              <span className="text-amber-700">Projelerimizi</span> İzleyin
             </h2>
             <p className="text-xl text-stone-600 max-w-4xl mx-auto leading-relaxed">
-              Gerçek projelerimizden videolar ile kaliteli işçiliğimizi ve müşteri memnuniyetimizi görün. 
-              Her projede aynı özen ve profesyonellikle çalışıyoruz.
+              Fayans döşeme ve tesisat projelerimizden videolar ile kaliteli işçiliğimizi görün. 
+              Uzman Ercan Gökçur ile her projede aynı özen ve profesyonellikle çalışıyoruz.
             </p>
           </div>
 

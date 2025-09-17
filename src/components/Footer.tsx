@@ -46,15 +46,15 @@ const Footer = () => {
               <ul className="space-y-3 text-stone-300">
                 <li><a href="#" className="hover:text-amber-300 transition duration-300 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
-                  <span>Tesisat Tamiri</span>
+                  <span>Fayans Döşeme</span>
+                </a></li>
+                <li><a href="#" className="hover:text-amber-300 transition duration-300 flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+                  <span>Tesisat İşleri</span>
                 </a></li>
                 <li><a href="#" className="hover:text-amber-300 transition duration-300 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
                   <span>Banyo Yenileme</span>
-                </a></li>
-                <li><a href="#" className="hover:text-amber-300 transition duration-300 flex items-center space-x-2">
-                  <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
-                  <span>Profesyonel Döşeme</span>
                 </a></li>
                 <li><a href="#" className="hover:text-amber-300 transition duration-300 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-amber-500 rounded-full"></span>

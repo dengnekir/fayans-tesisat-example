@@ -8,48 +8,48 @@ const Gallery = () => {
   const projects = [
     {
       id: 1,
-      title: "Modern Banyo Yenileme - Beşiktaş",
-      category: "Banyo Yenileme",
+      title: "Modern Fayans Döşeme - Beşiktaş",
+      category: "Fayans Döşeme",
       location: "Beşiktaş, İstanbul",
       before: "https://images.pexels.com/photos/342800/pexels-photo-342800.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 2,
-      title: "Mutfak Tezgah Döşemesi - Kadıköy",
-      category: "Döşeme",
+      title: "Mutfak Fayans Döşemesi - Kadıköy",
+      category: "Fayans Döşeme",
       location: "Kadıköy, İstanbul",
       before: "https://images.pexels.com/photos/280471/pexels-photo-280471.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 3,
-      title: "Komple Tesisat Yenileme - Şişli",
-      category: "Tesisat",
+      title: "Tesisat İşleri - Şişli (Ercan Gökçur)",
+      category: "Tesisat İşleri",
       location: "Şişli, İstanbul",
       before: "https://images.pexels.com/photos/1358914/pexels-photo-1358914.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 4,
-      title: "Lüks Banyo Döşemesi - Beyoğlu",
-      category: "Döşeme",
+      title: "Lüks Fayans Döşemesi - Beyoğlu",
+      category: "Fayans Döşeme",
       location: "Beyoğlu, İstanbul",
       before: "https://images.pexels.com/photos/280471/pexels-photo-280471.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/3935350/pexels-photo-3935350.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 5,
-      title: "Ana Banyo Yenileme - Üsküdar",
-      category: "Banyo Yenileme",
+      title: "Banyo Fayans Yenileme - Üsküdar",
+      category: "Fayans Döşeme",
       location: "Üsküdar, İstanbul",
       before: "https://images.pexels.com/photos/342800/pexels-photo-342800.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/6045184/pexels-photo-6045184.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 6,
-      title: "Zemin Döşeme Projesi - Fatih",
-      category: "Döşeme",
+      title: "Tesisat Projesi - Fatih (Ercan Gökçur)",
+      category: "Tesisat İşleri",
       location: "Fatih, İstanbul",
       before: "https://images.pexels.com/photos/280471/pexels-photo-280471.jpeg?auto=compress&cs=tinysrgb&w=800",
       after: "https://images.pexels.com/photos/5824866/pexels-photo-5824866.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -72,9 +72,8 @@ const Gallery = () => {
 
   const getCategoryColor = (category) => {
     switch (category) {
-      case 'Banyo Yenileme': return 'bg-amber-100 text-amber-700';
-      case 'Döşeme': return 'bg-teal-100 text-teal-700';
-      case 'Tesisat': return 'bg-blue-100 text-blue-700';
+      case 'Fayans Döşeme': return 'bg-amber-100 text-amber-700';
+      case 'Tesisat İşleri': return 'bg-teal-100 text-teal-700';
       default: return 'bg-stone-100 text-stone-700';
     }
   };

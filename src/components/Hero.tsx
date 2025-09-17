@@ -49,13 +49,14 @@ const Hero = () => {
           }`}>
             <span className="block text-white">Anadolu</span>
             <span className="block text-amber-300">Tesisat Ustası</span>
+            <span className="block text-stone-200 text-2xl md:text-3xl font-medium mt-4">Ercan Gökçur</span>
           </h1>
           
           <p className={`text-xl md:text-2xl mb-10 max-w-4xl mx-auto leading-relaxed text-stone-100 transition-all duration-1200 delay-500 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
-            İstanbul'da profesyonel tesisat, banyo yenileme ve döşeme hizmetleri. 
-            Kaliteli işçilik ve müşteri memnuniyeti garantisi ile evinizi dönüştürüyoruz.
+            İstanbul'da profesyonel fayans döşeme ve tesisat hizmetleri. 
+            Uzman Ercan Gökçur ile kaliteli işçilik ve müşteri memnuniyeti garantisi.
           </p>
           
           <div className={`flex flex-col sm:flex-row gap-6 justify-center items-center transition-all duration-1200 delay-700 ${

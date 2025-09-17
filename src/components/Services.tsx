@@ -4,25 +4,20 @@ import { Wrench, Droplets, Hammer, PaintBucket, Phone } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      icon: Droplets,
-      title: "Tesisat Hizmetleri",
-      description: "Su tesisatı tamiri, montajı, kaçak tespiti, boru değişimi ve acil tesisat hizmetleri. Profesyonel ekipmanlarla hızlı çözüm.",
-      features: ["Acil tamir", "Boru montajı", "Kaçak tespiti", "Kombi servisi"],
-      color: "from-blue-500 to-blue-600"
-    },
-    {
       icon: PaintBucket,
-      title: "Banyo Yenileme",
-      description: "Tasarımdan uygulamaya kadar komple banyo yenileme hizmetleri. Modern fiksürler ve premium malzemelerle dönüşüm.",
-      features: ["Komple yenileme", "Modern fiksürler", "Özel tasarım", "Su yalıtımı"],
-      color: "from-amber-500 to-amber-600"
+      title: "Fayans Döşeme ve Yenileme",
+      description: "Banyo, mutfak ve tüm yaşam alanlarınızda profesyonel fayans döşeme hizmetleri. Modern tasarım ve kaliteli malzemelerle mükemmel sonuçlar.",
+      features: ["Banyo fayansı", "Mutfak döşeme", "Zemin kaplaması", "Duvar kaplaması"],
+      color: "from-amber-500 to-amber-600",
+      professional: ""
     },
     {
-      icon: Hammer,
-      title: "Profesyonel Döşeme",
-      description: "Zemin, duvar ve mutfak tezgahı döşeme işleri. Premium malzemeler ve hassas montaj ile uzun ömürlü çözümler.",
-      features: ["Zemin döşeme", "Duvar kaplaması", "Mutfak tezgahı", "Döşeme tamiri"],
-      color: "from-teal-500 to-teal-600"
+      icon: Droplets,
+      title: "Tesisat İşleri",
+      description: "Su tesisatı tamiri, montajı, kaçak tespiti ve acil tesisat hizmetleri. Uzman Ercan Gökçur ile profesyonel çözümler.",
+      features: ["Acil tamir", "Boru montajı", "Kaçak tespiti", "Su tesisatı"],
+      color: "from-teal-500 to-teal-600",
+      professional: "Sorumlu: Ercan Gökçur"
     }
   ];
 
@@ -56,6 +51,11 @@ const Services = () => {
                   <h3 className="text-2xl font-bold text-stone-800 mb-6 group-hover:text-amber-700 transition-colors duration-300">
                     {service.title}
                   </h3>
+                  {service.professional && (
+                    <div className="bg-teal-50 border border-teal-200 rounded-lg p-3 mb-6">
+                      <p className="text-teal-700 font-semibold text-sm">{service.professional}</p>
+                    </div>
+                  )}
                   <p className="text-stone-600 mb-8 leading-relaxed text-lg">{service.description}</p>
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, idx) => (
